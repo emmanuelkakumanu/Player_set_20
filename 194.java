@@ -1,3 +1,4 @@
+
 import java.util.*;
 import java.lang.*;
 import java.io.*;
@@ -10,16 +11,16 @@ class Ideone
 		// your code goes here
 		Scanner s=new Scanner(System.in);
 		char ch=s.next().charAt(0);
-		s.next();
+		s.nextLine();
 		char ch1=s.next().charAt(0);
 		
-		Character.toLowerCase(ch);
-		Character.toLowerCase(ch1);
+		ch=Character.toLowerCase(ch);
+		ch1=Character.toLowerCase(ch1);
 		if(ch!=ch1)
 		{
 			if(ch=='r')
 			{
-				if(ch=='p')
+				if(ch1=='p')
 				System.out.print("P");
 				else
 				System.out.print("R");
@@ -41,6 +42,5 @@ class Ideone
 		}
 		else
 		System.out.print("D");
-		
-	} 
+	}
 }
